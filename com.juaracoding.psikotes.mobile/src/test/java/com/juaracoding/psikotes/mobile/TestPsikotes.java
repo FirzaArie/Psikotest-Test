@@ -28,7 +28,7 @@ public class TestPsikotes extends Reporting{
 
 	
 	@BeforeTest
-	public void openCalculator() throws Exception {
+	public void openWeb() throws Exception {
 		
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		// dari CLI
@@ -41,7 +41,7 @@ public class TestPsikotes extends Reporting{
 		//dari App Info com.psikotestdika.quiz/host.exp.exponent.MainActivity
 		capabilities.setCapability("appPackage", "com.psikotestdika.quiz");
 		capabilities.setCapability("appActivity", "host.exp.exponent.MainActivity");
-		
+//		capabilities.setCapability("automationName", "uiautomator1" );
 		URL url = new URL("http://127.0.0.1:4723/wd/hub");
 		
 		driver = new AppiumDriver<MobileElement>(url, capabilities);
@@ -73,7 +73,7 @@ public class TestPsikotes extends Reporting{
 		txtboxEmail.sendKeys("Test1@gmail.com");
 		txtboxPassword.sendKeys("Test1");
 		txtboxPassword2.sendKeys("Test1");
-		btnBuatAkun.click();
+//		btnBuatAkun.click();
 		
 		
 		test1.log(Status.PASS, "Web Psikotes Berhasil");

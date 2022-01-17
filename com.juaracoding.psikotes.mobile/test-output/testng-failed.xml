@@ -7,8 +7,8 @@
         <methods>
           <include name="daftarPage"/>
           <include name="reportTeardown"/>
-          <include name="openCalculator"/>
           <include name="reportSetup"/>
+          <include name="openWeb"/>
         </methods>
       </class> <!-- com.juaracoding.psikotes.mobile.TestPsikotes -->
     </classes>
