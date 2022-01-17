@@ -69,7 +69,7 @@ public class TestPsikotes extends Reporting{
 		txtboxFullName.sendKeys("Test 1");
 		//ktp harus 7
 		txtboxKtp.sendKeys("1039673");
-		//email badly format & by another
+		//email badly format & by anothe
 		txtboxEmail.sendKeys("Test1@gmail.com");
 		txtboxPassword.sendKeys("Test1");
 		txtboxPassword2.sendKeys("Test1");
