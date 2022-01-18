@@ -2,8 +2,8 @@ package com.juaracoding.psikotes.mobile.utils;
 
 public enum TestCases {
 	
-	T1("Web Psikotes"),
-	T2("Login");
+	T1("Home"),
+	T2("Daftar");
 	
 	private String testName;
 	
