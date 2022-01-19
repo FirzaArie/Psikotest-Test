@@ -53,6 +53,7 @@ public class TestPsikotes extends Reporting{
 	@Test
 	public void HomePage() {
 		ExtentTest test1 = extentReports.createTest("Step 1", "Home Page");
+		test1.log(Status.INFO, "Home Page");
 		test1.log(Status.PASS, "Membuka aplikasi");
 		System.out.println("Test HomePage");
 		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
@@ -74,6 +75,7 @@ public class TestPsikotes extends Reporting{
 	@Test
 	public void daftarPage() {
 		ExtentTest test2 = extentReports.createTest("Step 2", "Daftar Page");
+		test2.log(Status.INFO, "Daftar Page");
 		test2.log(Status.PASS, "Masuk ke halaman daftar");
 		System.out.println("Test DaftarPage");
 //		MobileElement btnPage = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup"));
@@ -124,7 +126,7 @@ public class TestPsikotes extends Reporting{
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		test2.log(Status.PASS, "Error ketika KTP kurang dari 7 angka");
 		txtboxName.sendKeys("Test 1");
-		txtboxKtp.sendKeys("1111111");
+		txtboxKtp.sendKeys("1111112");
 		driver.hideKeyboard();
 		btnBuatAkun.click();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -134,7 +136,7 @@ public class TestPsikotes extends Reporting{
 		btnBuatAkun.click();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		test2.log(Status.PASS, "Error Email tidak memiliki @ didalamnya");
-		txtboxEmail.sendKeys("Test12@gmail.com");
+		txtboxEmail.sendKeys("Test13@gmail.com");
 		driver.hideKeyboard();
 		btnBuatAkun.click();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
@@ -146,23 +148,27 @@ public class TestPsikotes extends Reporting{
 		
 		test2.log(Status.PASS, "Daftar Berhasil");
 	}	
-//	@Test
-//	public void testPage() {
-//		ExtentTest test3 = extentReports.createTest("Step 3", "Psikotest Cognitif Page");
-//		test3.log(Status.INFO, "Psikotest Cognitif Page");
-//		System.out.println("Psikotest Cognitif Page");
-//		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
-//		MobileElement emailBox = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.EditText[1]"));
-//		MobileElement passwordBox = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.EditText[2]"));
-//		MobileElement btnLogin = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[3]"));
-//		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
-//		emailBox.sendKeys("Test 1");
-//		passwordBox.sendKeys("Test 1");
-//		btnLogin.click();
-//		
-//		
-//		test3.log(Status.PASS, "Psikotest Cognitif Berhasil");
-//	}
+	@Test
+	public void testPage() {
+		ExtentTest test3 = extentReports.createTest("Step 3", "Sign In");
+		test3.log(Status.INFO, "Sign In");
+		System.out.println("Halaman Awal");
+		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
+		MobileElement emailBox = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.EditText[1]"));
+		MobileElement passwordBox = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.widget.EditText[2]"));
+		MobileElement btnLogin = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup[3]"));
+		emailBox.sendKeys("Test12@gmail.com");
+		passwordBox.sendKeys("Test123");
+		btnLogin.click();
+		test3.log(Status.PASS, "Error akun belum diaktifkan ");
+		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
+		emailBox.sendKeys("testing1@gmail.com");
+		passwordBox.sendKeys("firzaarie");
+		btnLogin.click();
+		
+		
+		test3.log(Status.PASS, "Sign In Berhasil");
+	}
 		
 }
 
