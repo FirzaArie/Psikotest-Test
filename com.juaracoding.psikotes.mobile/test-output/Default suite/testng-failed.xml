@@ -6,6 +6,8 @@
       <class name="com.juaracoding.psikotes.mobile.TestPsikotes">
         <methods>
           <include name="testPage"/>
+          <include name="daftarPage"/>
+          <include name="HomePage"/>
           <include name="reportTeardown"/>
           <include name="SignInPage"/>
           <include name="reportSetup"/>
