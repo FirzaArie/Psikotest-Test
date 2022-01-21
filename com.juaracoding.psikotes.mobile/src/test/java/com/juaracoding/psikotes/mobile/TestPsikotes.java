@@ -41,7 +41,7 @@ public class TestPsikotes extends Reporting{
 		//dari App Info com.psikotestdika.quiz/host.exp.exponent.MainActivity
 		capabilities.setCapability("appPackage", "com.psikotestdika.quiz");
 		capabilities.setCapability("appActivity", "host.exp.exponent.LauncherActivity");
-		capabilities.setCapability("automationName", "uiautomator2");
+		capabilities.setCapability("automationName", "uiautomator1");
 		URL url = new URL("http://127.0.0.1:4723/wd/hub");
 		
 		driver = new AppiumDriver<MobileElement>(url, capabilities);
@@ -166,7 +166,7 @@ public class TestPsikotes extends Reporting{
 		btnLogin.click();
 		test3.log(Status.PASS, "Error akun belum diaktifkan ");
 		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
-		emailBox.sendKeys("testing2@gmail.com");
+		emailBox.sendKeys("testing3@gmail.com");
 		passwordBox.sendKeys("firzaarie");
 		driver.hideKeyboard();
 		btnLogin.click();
@@ -189,73 +189,77 @@ public class TestPsikotes extends Reporting{
 //		MobileElement btnAkhiriTestIya 		= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[2]"));	
 //		MobileElement btnAkhiriTestTidak	= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[3]"));	
 	
-		btnCognitif.click();
-		test4.log(Status.INFO, "Cognitif");
-		MobileElement btnBatalTest 			= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]"));
-		
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		btnBatalTest.click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		btnCognitif.click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		MobileElement btnMulaiUjian 		= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]"));
-		btnMulaiUjian.click();
-		test4.log(Status.PASS, "Tombol Pilihan Test Cognitif berhasil");
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		
-		MobileElement btnJawaban			= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup"));
-		MobileElement btnAkhiriTest 		= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]"));		
-		MobileElement btnAkhiriTestIya 		= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[2]"));	
-		
-		btnJawaban.click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		btnAkhiriTest.click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		btnAkhiriTestIya.click();
-		test4.log(Status.PASS, "Menghentikan test cognitif berhasil");
-		
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		btnCognitif.click();
+//		test4.log(Status.INFO, "Cognitif");
+//		MobileElement btnBatalTest 			= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]"));
+//		
+//		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		btnBatalTest.click();
+//		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		btnCognitif.click();
+//		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		MobileElement btnMulaiUjian 		= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]"));
+//		btnMulaiUjian.click();
+//		test4.log(Status.PASS, "Tombol Pilihan Test Cognitif berhasil");
+//		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		
+////		MobileElement btnJawaban			= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]"));
+//		MobileElement btnAkhiriTest 		= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]"));			
+////		btnJawaban.click();
+//		driver.manage().timeouts().implicitlyWait(110, TimeUnit.SECONDS);
+//		btnAkhiriTest.click();
+//		MobileElement btnAkhiriTestIya 		= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[2]"));	
+//		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+//		btnAkhiriTestIya.click();
+//		test4.log(Status.PASS, "Menghentikan test cognitif berhasil");
+//		
 		btnAccurate.click();
 		test4.log(Status.INFO, "Accurate");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		MobileElement btnBatalTest 			= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]"));
 		btnBatalTest.click();
 		test4.log(Status.PASS, "Tombol Batal Test Accurate berhasil");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		btnCognitif.click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		MobileElement btnMulaiUjian 		= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]"));
 		btnMulaiUjian.click();
 		test4.log(Status.PASS, "Tombol Pilihan Test Accurate berhasil");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		btnJawaban.click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		MobileElement btnJawaban2			= driver.findElement(By.xpath("(//android.view.ViewGroup[@content-desc=\"gender-switch-selector\"])[1]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]"));
+//		btnJawaban2.click();
+		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+		MobileElement btnAkhiriTest 		= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]"));			
 		btnAkhiriTest.click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		MobileElement btnAkhiriTestIya 		= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[2]"));	
 		btnAkhiriTestIya.click();
 		test4.log(Status.PASS, "Menghentikan test Accurate berhasil");
 		
-		
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		btnProactive.click();
 		test4.log(Status.INFO, "Proactive");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		MobileElement btnBatalTest 			= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]"));
 		btnBatalTest.click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		test4.log(Status.PASS, "Tombol Batal Test Proactive berhasil");
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		btnCognitif.click();
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		MobileElement btnMulaiUjian 		= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]"));
 		btnMulaiUjian.click();
 		test4.log(Status.PASS, "Tombol Pilihan Test Proactive berhasil");
 		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		btnJawaban.click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+//		MobileElement btnJawaban3			= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup/android.view.ViewGroup[1]/android.view.ViewGroup"));
+//		btnJawaban3.click();
+		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+//		MobileElement btnAkhiriTest 		= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]"));			
 		btnAkhiriTest.click();
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+//		MobileElement btnAkhiriTestIya 		= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup[2]"));	
 		btnAkhiriTestIya.click();
 		test4.log(Status.PASS, "Menghentikan test Proactive berhasil");
-		
-		
 		
 		
 		btnLogout.click();

@@ -7,7 +7,6 @@
         <methods>
           <include name="testPage"/>
           <include name="reportTeardown"/>
-          <include name="signInPage"/>
           <include name="reportSetup"/>
           <include name="openWeb"/>
         </methods>
