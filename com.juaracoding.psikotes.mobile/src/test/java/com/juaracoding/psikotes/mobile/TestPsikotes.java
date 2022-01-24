@@ -174,7 +174,7 @@ public class TestPsikotes extends Reporting{
 		btnLogin.click();
 		test3.log(Status.PASS, "Error akun belum diaktifkan ");
 		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
-		emailBox.sendKeys("testing3@gmail.com");
+		emailBox.sendKeys("testing4@gmail.com");
 		passwordBox.sendKeys("firzaarie");
 		driver.hideKeyboard();
 		btnLogin.click();
@@ -225,6 +225,16 @@ public class TestPsikotes extends Reporting{
 		touchAction.perform();
 		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
 		test4.log(Status.PASS, "Memulai Test Cognitif");
+		
+//		Jawaban Test Cognitif
+		x = 175;
+		y = 750;
+//		touchAction.press(PointOption.point(x, y));
+		touchAction.tap(TapOptions.tapOptions()
+		.withPosition(PointOption.point(x, y)).withTapsCount(count));
+		touchAction.perform();
+		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
+		test4.log(Status.PASS, "Mengisi Jawaban Test Cognitif");		
 		
 //		Akhiri Test
 		x = 540;
@@ -299,6 +309,16 @@ public class TestPsikotes extends Reporting{
 		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
 		test4.log(Status.PASS, "Memulai Test Accurate");
 		
+//		Jawaban Test Accurate
+		x = 360;
+		y = 740;
+//		touchAction.press(PointOption.point(x, y));
+		touchAction.tap(TapOptions.tapOptions()
+		.withPosition(PointOption.point(x, y)).withTapsCount(count));
+		touchAction.perform();
+		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
+		test4.log(Status.PASS, "Mengisi Jawaban Test Accurate");	
+		
 //		Akhiri Test
 		x = 540;
 		y = 1685;
@@ -372,6 +392,16 @@ public class TestPsikotes extends Reporting{
 		touchAction.perform();
 		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
 		test4.log(Status.PASS, "Memulai Test Proactive");
+		
+//		Jawaban Test Proactive
+		x = 75;
+		y = 630;
+//		touchAction.press(PointOption.point(x, y));
+		touchAction.tap(TapOptions.tapOptions()
+		.withPosition(PointOption.point(x, y)).withTapsCount(count));
+		touchAction.perform();
+		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
+		test4.log(Status.PASS, "Mengisi Jawaban Test Proactive");	
 		
 //		Akhiri Test
 		x = 540;
