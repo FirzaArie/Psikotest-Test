@@ -224,7 +224,7 @@ public class TestPsikotes extends Reporting{
 		.withPosition(PointOption.point(x, y)).withTapsCount(count));
 		touchAction.perform();
 		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
-		test4.log(Status.PASS, "Log out berhasil");
+		test4.log(Status.PASS, "Memulai Test Cognitif");
 		
 //		Akhiri Test
 		x = 540;
@@ -297,6 +297,7 @@ public class TestPsikotes extends Reporting{
 		.withPosition(PointOption.point(x, y)).withTapsCount(count));
 		touchAction.perform();
 		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
+		test4.log(Status.PASS, "Memulai Test Accurate");
 		
 //		Akhiri Test
 		x = 540;
@@ -343,6 +344,7 @@ public class TestPsikotes extends Reporting{
 		.withPosition(PointOption.point(x, y)).withTapsCount(count));
 		touchAction.perform();
 		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
+		test4.log(Status.PASS, "Pilihan Test Berhasil");
 		
 //		Batal Ujian
 		x = 225;
@@ -369,6 +371,7 @@ public class TestPsikotes extends Reporting{
 		.withPosition(PointOption.point(x, y)).withTapsCount(count));
 		touchAction.perform();
 		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
+		test4.log(Status.PASS, "Memulai Test Proactive");
 		
 //		Akhiri Test
 		x = 540;
@@ -407,6 +410,8 @@ public class TestPsikotes extends Reporting{
 		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
 		test4.log(Status.PASS, "Akhiri Test Sebelum Waktu Proaktif");
 		
+	MobileElement btnBatalTest 			= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[1]"));
+	btnBatalTest.click();
 	MobileElement btnLogout 			= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.widget.ImageView"));	
 	btnLogout.click();
 	MobileElement btnLogoutIya 			= driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup[2]"));
