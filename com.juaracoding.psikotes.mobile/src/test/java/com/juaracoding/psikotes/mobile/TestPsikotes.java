@@ -226,6 +226,10 @@ public class TestPsikotes extends Reporting{
 		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
 		test4.log(Status.PASS, "Memulai Test Cognitif");
 		
+//		Timeout 15 menit
+//		driver.manage().timeouts().implicitlyWait(15, TimeUnit.MINUTES);
+//		test4.log(Status.PASS, "Timer Test Cognitif");
+		
 //		Jawaban Test Cognitif
 		x = 175;
 		y = 750;
@@ -319,6 +323,10 @@ public class TestPsikotes extends Reporting{
 		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
 		test4.log(Status.PASS, "Mengisi Jawaban Test Accurate");	
 		
+//		Timeout 5 menit
+//		driver.manage().timeouts().implicitlyWait(5, TimeUnit.MINUTES);
+//		test4.log(Status.PASS, "Timer Test Accurate");
+		
 //		Akhiri Test
 		x = 540;
 		y = 1685;
@@ -392,6 +400,10 @@ public class TestPsikotes extends Reporting{
 		touchAction.perform();
 		driver.manage().timeouts().implicitlyWait(150, TimeUnit.SECONDS);
 		test4.log(Status.PASS, "Memulai Test Proactive");
+		
+//		Timeout 15 menit
+//		driver.manage().timeouts().implicitlyWait(15, TimeUnit.MINUTES);
+//		test4.log(Status.PASS, "Timer Test Proactive");
 		
 //		Jawaban Test Proactive
 		x = 75;
